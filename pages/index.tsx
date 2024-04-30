@@ -35,6 +35,16 @@ export default function Home() {
           </button>
         ))}
       </div>
+      <div>
+        <a
+          href="https://github.com/arealclimber/dark-mode-tailwindcss-best-practice"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline"
+        >
+          Source code
+        </a>
+      </div>
     </main>
   );
 }
