@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 
@@ -8,13 +8,17 @@ enum Theme {
 }
 
 export default function Home() {
-  const [theme, setTheme] = useState(Theme.light);
+  const [theme, setTheme] = useState(Theme.dark);
 
   const toggleTheme = () => {
     const newTheme = theme === Theme.light ? Theme.dark : Theme.light;
     setTheme((prev) => (prev === Theme.light ? Theme.dark : Theme.light));
     document.documentElement.setAttribute("data-theme", newTheme);
   };
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme]);
 
   return (
     <main className={`min-h-screen`}>
