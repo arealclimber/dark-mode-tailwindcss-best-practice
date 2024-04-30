@@ -22,12 +22,12 @@ export default function Home() {
 
   return (
     <main
-      className={`flex min-h-screen flex-col items-center justify-start space-y-5 p-24 text-black dark:text-white bg-white dark:bg-black`}
+      className={`flex min-h-screen flex-col items-center justify-start space-y-5 p-24 text-example-text-color bg-example-background-color`}
     >
-      <div>Dark/Light mode with class prefix (WI)</div>
+      <div>Dark/Light mode with class prefix and custom variable (WIII)</div>
       <button
         onClick={toggleTheme}
-        className="dark:bg-blue-300 dark:text-black bg-blue-900 text-white px-5 py-2 rounded-md hover:opacity-80"
+        className="bg-example-sky text-example-text-color px-5 py-2 rounded-md hover:opacity-80"
       >
         {theme === Theme.light ? "☀️ Light" : "🌚 Dark"}
       </button>
