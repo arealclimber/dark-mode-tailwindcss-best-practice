@@ -19,6 +19,8 @@ const config: Config = {
         "example-red": "var(--example-red)",
         "example-background-color": "var(--example-background-color)",
         "example-text-color": "var(--example-text-color)",
+        "example-green": "var(--example-green)",
+        "example-purple": "var(--example-purple)",
       },
     },
   },
